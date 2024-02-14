@@ -25,7 +25,7 @@ Creación de una instancia EC2 en Amazon AWS
     ![Paso #1](img/paso6.jpeg)
     - Creamos un par de claves para acceder a la instancia de forma segura
     ![Paso #1](img/paso7.jpeg)
-    <br>o por el contrario asignamos un par de claves ya existen.
+    <br>o por el contrario asignamos un par de claves ya existen.<br>
     ![Paso #1](img/paso8.jpeg)
     - Configuración de red.
     ![Paso #1](img/paso9.jpeg)
