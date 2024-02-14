@@ -10,7 +10,7 @@ Creación de una instancia EC2 en Amazon AWS
     - Inicia sesión en tu cuenta de Amazon Web Services (AWS).
     - Ve al servicio EC2 mediante el buscador
     ![Paso #1](img/paso1v1.jpeg)
-    o tambien desde el panel servicios > informatica > EC2
+    <br>o tambien desde el panel servicios > informatica > EC2
     ![Paso #1](img/paso1v2.jpeg)
 2. Lanzamiento de la instancia:
     - Haz clic en **Lanzar la instancia**.
@@ -25,7 +25,7 @@ Creación de una instancia EC2 en Amazon AWS
     ![Paso #1](img/paso6.jpeg)
     - Creamos un par de claves para acceder a la instancia de forma segura
     ![Paso #1](img/paso7.jpeg)
-    o por el contrario asignamos un par de claves ya existen.
+    <br>o por el contrario asignamos un par de claves ya existen.
     ![Paso #1](img/paso8.jpeg)
     - Configuración de red.
     ![Paso #1](img/paso9.jpeg)
