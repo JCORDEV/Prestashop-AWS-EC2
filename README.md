@@ -1,4 +1,7 @@
 # Prestashop AWS EC2
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
 Guía **paso a paso** para crear una instancia de Amazon EC2, instalar, configurar y personalizar una tienda virtual.
 
@@ -78,7 +81,9 @@ esto nos evitara que la ip publica cambie con el pasar del tiempo.
 
 - <a id="bd"></a>Creamos nuestra base de datos para **Prestashop** ➡️ ```create database burgerland charset utf8mb4 collate utf8mb4_unicode_ci;```
 ![Paso #24](img/paso24.png)
-**Nota:** renombrar **burgerland** por el nombre que desees poner a tu base de datos.
+
+> [!IMPORTANT]
+> renombrar **burgerland** por el nombre que desees poner a tu base de datos.
 
 - <a id="user"></a>Creamos el usuario ➡️ ```create user user_burgerland@localhost identified by '123';```
 ![Paso #25](img/paso25.png)
@@ -158,3 +163,4 @@ entramos a la carpeta de nuestra tienda ➡️ ```cd html/burgerland``` y ejecut
 
 - Aqui un simple cambio
 ![Paso #51](img/paso51.png)
+
