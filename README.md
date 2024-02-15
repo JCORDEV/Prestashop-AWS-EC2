@@ -78,11 +78,11 @@ esto nos evitara que la ip publica cambie con el pasar del tiempo.
 - Iniciamos sesión en **MySQL** ➡️ ```sudo mysql -u root -p```
 ![Paso #1](img/paso23.png)
 
-- Creamos nuestra base de datos para **Prestashop** ➡️ ```create database burgerland charset utf8mb4 collate utf8mb4_unicode_ci;```
+- <a id="bd"></a>Creamos nuestra base de datos para **Prestashop** ➡️ ```create database burgerland charset utf8mb4 collate utf8mb4_unicode_ci;```
 ![Paso #1](img/paso24.png)
 **Nota:** renombrar **burgerland** por el nombre que desees poner a tu base de datos.
 
-- Creamos el usuario ➡️ ```create user user_burgerland@localhost identified by '123';```
+- <a id="user"></a>Creamos el usuario ➡️ ```create user user_burgerland@localhost identified by '123';```
 ![Paso #1](img/paso25.png)
 **Nota:** renombrar **user_burgerland** por el nombre de usuario que desees poner.
 
@@ -103,8 +103,8 @@ esto nos evitara que la ip publica cambie con el pasar del tiempo.
 - Descomprimir el archivo **.zip** descargado ➡️ ```sudo unzip prestashop_8.1.3.zip```
 ![Paso #1](img/paso30.png)
 
-- Crear una carpeta para el nombre de la tienda ➡️ ```sudo mkdir burgerland```, luego movemos el **.zip** que se nos genero a la carpeta previamente creada ➡️ ```sudo mv prestashop.zip burgerland``` y por ultimo ingresamos a la carpeta ➡️ ```cd burgerland```
-![Paso #1](img/paso31.png)
+- <a id="carpeta"></a>Crear una carpeta para el nombre de la tienda ➡️ ```sudo mkdir burgerland```, luego movemos el **.zip** que se nos genero a la carpeta previamente creada ➡️ ```sudo mv prestashop.zip burgerland``` y por ultimo ingresamos a la carpeta ➡️ ```cd burgerland```
+<a name="carpeta">![Paso #1](img/paso31.png)</a>
 
 - Descomprimir **prestashop.zip** ➡️ ```sudo unzip prestashop.zip```
 ![Paso #1](img/paso32.png)
@@ -117,3 +117,46 @@ esto nos evitara que la ip publica cambie con el pasar del tiempo.
 
 - Reiniciamos el servicio **apache2** ➡️ ```sudo service apache2 restart```
 ![Paso #1](img/paso35-reiniciamos%20los%20servicios%20despues%20de%20instalar%20todo.png)
+
+- <a id="web"></a>Copiamos la **IP elastica** ➡️ ```44.193.189.248/burgerland```
+![Paso #1](img/paso36.png)
+**Nota:** **44.193.189.248** ➡️ es la **IP elastica** de su instancia donde instalo prestashop, **burgerland** ➡️ es el nombre de la carpeta creada en este **[paso](#carpeta)**
+
+- Seleccionamos el **idioma** de preferencia
+![Paso #1](img/paso37.png)
+
+- Aceptamos **terminos y condiciones**
+![Paso #1](img/paso38.png)
+
+- Nos saldra este error porque aun no tenemos habilitado el módulo de **a2enmod rewrite**
+![Paso #1](img/paso39.png)
+para poder habilitar el módulo de **a2enmod rewrite** ejecutamos el siguiente comando ➡️ ```sudo a2enmod rewrite```
+![Paso #1](img/paso40-activar%20modulo,%20reiniciar%20servicio.png)
+y damos clic en **Actualizar información**
+![Paso #1](img/paso41.png)
+
+- Registramos **la información sobre tu tienda**
+![Paso #1](img/paso42.png)
+
+- Dejamos esta parte **por defecto**
+![Paso #1](img/paso43.png)
+
+- Registramos el nombre de la **[base de datos](#bd)**, el nombre de **[usuario y contraseña](#user)** y por ultimo **comprobamos la conexion con la base de datos**
+![Paso #1](img/paso44.png)
+![Paso #1](img/paso45.png)
+- **Prestashop** nos recomienda eliminar la carpeta **install** por razones de seguridad
+![Paso #1](img/paso46.png)
+entramos a la carpeta de nuestra tienda ➡️ ```cd html/burgerland``` y ejecutamos el siguiente comando para borrarla ➡️ ```sudo rm -r install```
+![Paso #1](img/paso47.png)
+
+- <a id="por_defecto"></a>Para entrar a la página ➡️ ```44.193.189.248/burgerland``` teniendo en cuenta estas **[especificaciones](#web)**
+![Paso #1](img/paso48.png)
+
+- Para entrar al administrador ➡️ ```44.193.189.248/burgerland/admin/```
+![Paso #1](img/paso49.png)
+
+- Puedes realizar los cambios necesarios para personalizar tu tienda ya que por defecto viene instalado este **[tema](#por_defecto)**.
+![Paso #1](img/paso50.png)
+
+- Aqui un simple cambio
+![Paso #1](img/paso51.png)
