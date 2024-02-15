@@ -167,10 +167,10 @@ entramos a la carpeta de nuestra tienda ➡️ ```cd html/burgerland``` y ejecut
 
 > [!IMPORTANT]
 > en caso de encontrarse con el siguiente error al ingresar al administrador de esta **[forma](#admin)**<br>
-![Error-admin](img/error-admin.jpeg)<br>
+![Error-admin](img/error-admin.jpeg)<br><br>
 Ingrese a la carpeta donde instalo **prestashop** ➡️ ```cd /var/www/html/burgerland``` y renombra la carpeta **admin...** ➡️ ```sudo mv admin313mltutiw29zaay9xz/ admin```
 ![Error-admin](img/importante.png)
 
 > [!NOTE]
-> <br>**admin313mltutiw29zaay9xz** ➡️ los números y letras **313mltutiw29zaay9xz** despues de **admin** varian para cada persona, busca la carpeta que empiece por **admin**.<br>
+> **admin313mltutiw29zaay9xz** ➡️ los números y letras **313mltutiw29zaay9xz** despues de **admin** varian para cada persona, busca la carpeta que empiece por **admin**.<br><br>
 **admin** ➡️ es el nuevo nombre de la carpeta **admin313mltutiw29zaay9xz**
