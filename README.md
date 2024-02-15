@@ -81,8 +81,7 @@ esto nos evitara que la ip publica cambie con el pasar del tiempo.
 
 - <a id="bd"></a>Creamos nuestra base de datos para **Prestashop** ➡️ ```create database burgerland charset utf8mb4 collate utf8mb4_unicode_ci;```
 ![Paso #24](img/paso24.png)
-> [!IMPORTANT]
-> renombrar **burgerland** por el nombre que desees poner a tu base de datos.
+**Nota:** renombrar **burgerland** por el nombre que desees poner a tu base de datos.
 
 - <a id="user"></a>Creamos el usuario ➡️ ```create user user_burgerland@localhost identified by '123';```
 ![Paso #25](img/paso25.png)
