@@ -81,7 +81,6 @@ esto nos evitara que la ip publica cambie con el pasar del tiempo.
 
 - <a id="bd"></a>Creamos nuestra base de datos para **Prestashop** ➡️ ```create database burgerland charset utf8mb4 collate utf8mb4_unicode_ci;```
 ![Paso #24](img/paso24.png)
-
 > [!IMPORTANT]
 > renombrar **burgerland** por el nombre que desees poner a tu base de datos.
 
